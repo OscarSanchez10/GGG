@@ -2,58 +2,46 @@
   display: flex;
   background-color: #171a1f;
   padding: 20px;
-  align-items: flex-start;
-  justify-content: space-between; /* Alinear elementos a los extremos */
+  align-items: center;
+  justify-content: center;
 }
 
 .main-image {
-  flex: 0 0 auto; /* Evitar que la imagen principal se encoja */
-  margin-right: 20px;
-  max-width: 700px;
+  flex: 0 0 auto;
+  max-width: 60%;
+  margin-right: 40px;
 }
 
 .main-image img {
-  width: 150%;
+  width: 100%;
   height: auto;
-
-}
-
-.main-description {
-  color: white;
-  padding: 10px;
-  background-color: white;
-  width: 150%;
-
 }
 
 .sidebar {
-  margin-top: 95px;
-  width: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 40%;
 }
-
-.sidebar div {
-  border-radius: 10px; /* Hace que los div sean circulares */
-}
-
 
 .game-comment {
   display: flex;
   align-items: center;
   background-color: #3b7ef9;
-  padding: 10px;
-  margin-bottom: 45px;
-  height: 200px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .game-comment img {
-  width: 250px;
-  height: 150px;
+  width: 120px;
+  height: auto;
   object-fit: cover;
-  margin-right: 10px;
-  border-radius: 5px;
+  margin-right: 20px;
+  border-radius: 10px;
 }
 
 .comment-text {
@@ -61,15 +49,46 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 130px;
+  align-items: flex-start;
 }
 
 .comment-text h3 {
   margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 16px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .comment-text p {
-  font-size: 14px;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.main-description {
+  color: white;
+  padding: 20px;
+  background-color: #3b7ef9;
+  border-radius: 15px;
+  margin-top: 20px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 767px) {
+  .game-comments {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-image,
+  .sidebar {
+    max-width: 100%;
+  }
+
+  .main-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
