@@ -7,14 +7,16 @@
     <input type="text" placeholder="Escribe aquí...">
     <button>Buscar →</button>
   </div>
-</div><div class="most-played" style="background-color: #171a1f;">
+</div>
+<div class="most-played" style="background-color: #171a1f;">
   <h2 style="color: #3b7ef9;">Los más jugados</h2>
   <div class="game-list">
-    <div class="game-card" *ngFor="let game of games"> <!-- cambio xd -->
+    <div class="game-card" *ngFor="let game of games">
       <img [src]="game.imageUrl" [alt]="game.name">
       <h3>{{ game.name }}</h3>
       <div class="rating">
-        <span class="star" *ngFor="let i of [1,2,3,4,5]; let idx = index" (click)="setRating(game, idx + 1)" [ngClass]="{'filled': (idx + 1) <= game.rating}">&#9733;</span>
+        <span class="star" *ngFor="let i of [1,2,3,4,5]; let idx = index" (click)="setRating(game, idx + 1)"
+          [ngClass]="{'filled': (idx + 1) <= game.rating}">&#9733;</span>
       </div>
       <div class="players">
         <img src="assets/img/player-icon.png" alt="Player Icon">
@@ -23,5 +25,5 @@
     </div>
   </div>
   <app-comunidad></app-comunidad>
-
+  <app-listas></app-listas> <!-- Nuevo componente app/listas -->
 </div>
