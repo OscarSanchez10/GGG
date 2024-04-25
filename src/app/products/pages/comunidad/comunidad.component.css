@@ -1,0 +1,75 @@
+.game-comments {
+  display: flex;
+  background-color: #171a1f;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: space-between; /* Alinear elementos a los extremos */
+}
+
+.main-image {
+  flex: 0 0 auto; /* Evitar que la imagen principal se encoja */
+  margin-right: 20px;
+  max-width: 700px;
+}
+
+.main-image img {
+  width: 150%;
+  height: auto;
+
+}
+
+.main-description {
+  color: white;
+  padding: 10px;
+  background-color: white;
+  width: 150%;
+
+}
+
+.sidebar {
+  margin-top: 50px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar div {
+  border-radius: 10px; /* Hace que los div sean circulares */
+}
+
+
+.game-comment {
+  display: flex;
+  align-items: center;
+  background-color: #3b7ef9;
+  padding: 10px;
+  margin-bottom: 45px;
+  height: 200px;
+}
+
+.game-comment img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.comment-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 130px;
+}
+
+.comment-text h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.comment-text p {
+  font-size: 14px;
+}
