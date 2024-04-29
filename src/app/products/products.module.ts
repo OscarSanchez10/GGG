@@ -9,6 +9,7 @@ import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { ComunidadComponent } from './pages/comunidad/comunidad.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 import { SharedModule } from 'primeng/api';
+import { InformacionComponent } from './pages/informacion/informacion.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SharedModule } from 'primeng/api';
     ListasComponent,
     NoticiasComponent,
     ComunidadComponent,
-    TiendaComponent
+    TiendaComponent,
+    InformacionComponent
   ],
   imports: [
     CommonModule,

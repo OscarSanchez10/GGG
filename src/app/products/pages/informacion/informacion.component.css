@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-left img {
+    height: 50px;
+}
+
+.subscribe {
+    margin-top: 40px;
+}
+
+.subscribe h2 {
+    margin-bottom: 5px;
+}
+
+.text-container {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.text-container p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    flex-wrap: wrap;
+    margin-top: 20px; /* Espacio entre el texto y los botones */
+}
+
+.button-column {
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.buttons a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.subscribe input[type="text"] {
+    width: 450px; /* ajusta el valor según lo desees */
+    border-radius: 10px;
+}
+
