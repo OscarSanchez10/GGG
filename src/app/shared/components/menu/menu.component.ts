@@ -43,7 +43,9 @@ export class MenuComponent {
       {
         icon: 'pi pi-search',
       },
-
+      {
+        icon: 'pi pi-user',
+      },
 
     ];
   }
