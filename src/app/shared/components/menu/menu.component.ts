@@ -7,13 +7,15 @@ import { MenuItem } from 'primeng/api';
 })
 export class MenuComponent {
 
+
+
   public menuItems: MenuItem[] = [];
 
   ngOnInit() {
     this.menuItems = [
       {
         label: 'Inicio',
-        routerLink: '/'
+        routerLink: 'inicio'
 
       },
       {
@@ -45,6 +47,7 @@ export class MenuComponent {
       },
       {
         icon: 'pi pi-user',
+        routerLink: 'login'
       },
 
     ];

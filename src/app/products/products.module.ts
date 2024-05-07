@@ -10,6 +10,8 @@ import { ComunidadComponent } from './pages/comunidad/comunidad.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 import { SharedModule } from 'primeng/api';
 import { InformacionComponent } from './pages/informacion/informacion.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 
 @NgModule({
@@ -21,13 +23,16 @@ import { InformacionComponent } from './pages/informacion/informacion.component'
     NoticiasComponent,
     ComunidadComponent,
     TiendaComponent,
-    InformacionComponent
+    InformacionComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     CommonModule,
     ProductsRoutingModule,
   ],
-  exports: [
-  ]
+
+
+
 })
 export class ProductsModule { }

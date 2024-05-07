@@ -6,12 +6,20 @@ import { ListasComponent } from './pages/listas/listas.component';
 import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { ComunidadComponent } from './pages/comunidad/comunidad.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 
 const routes: Routes = [
   {
     path: '',
+    component: LoginComponent
+
+  },
+  {
+    path: 'inicio',
     component: InicioComponent
+
   },
   {
     path: 'juegos',
@@ -35,9 +43,16 @@ const routes: Routes = [
     component: TiendaComponent
   },
   {
+    path: 'register',
+    component: RegisterComponent
+  },
+
+
+  {
     path: '**',
     redirectTo: ''
   }
+
 ];
 
 @NgModule({
