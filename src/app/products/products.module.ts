@@ -12,6 +12,9 @@ import { SharedModule } from 'primeng/api';
 import { InformacionComponent } from './pages/informacion/informacion.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { RecoverComponent } from './pages/recover/recover.component';
+import { ChangeComponent } from './pages/change/change.component';
+import { ResendComponent } from './pages/resend/resend.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { RegisterComponent } from './pages/register/register.component';
     TiendaComponent,
     InformacionComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    RecoverComponent,
+    ChangeComponent,
+    ResendComponent
   ],
   imports: [
     CommonModule,

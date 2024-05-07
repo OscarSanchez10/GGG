@@ -8,6 +8,9 @@ import { ComunidadComponent } from './pages/comunidad/comunidad.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { RecoverComponent } from './pages/recover/recover.component';
+import { ChangeComponent } from './pages/change/change.component';
+import { ResendComponent } from './pages/resend/resend.component';
 
 
 const routes: Routes = [
@@ -46,6 +49,19 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent
   },
+  {
+    path: 'recover',
+    component: RecoverComponent
+  },
+  {
+    path: 'change',
+    component: ChangeComponent
+  },
+  {
+    path: 'resend',
+    component: ResendComponent
+  },
+
 
 
   {
